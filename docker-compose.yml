@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  pota-aprs:
+    build: .
+    container_name: pota-aprs-server
+    restart: unless-stopped
+    environment:
+      - TZ=America/Chicago  # Change to your timezone
+    volumes:
+      - ./logs:/app/logs
+    network_mode: bridge
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
