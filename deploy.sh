@@ -1,5 +1,5 @@
 #!/bin/bash
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/bin:/opt/bin/git:$PATH"
+export PATH="/opt/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 LOG_FILE="/volume1/docker/pota-aprs-server/logs/deploy.log"
 
